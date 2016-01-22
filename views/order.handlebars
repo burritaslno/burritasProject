@@ -1,0 +1,26 @@
+<div class="header">
+	<h1 align="center">{{title}}</h1>
+</div>
+<div class="container">
+	<form class="form-container" method="post" action="/orders/update/{{order._id}}">
+		<div class="form-group">
+			<label>Productos</label>
+			<select id="selectProduct" class="form-control" name="product" data-product-id="{{order.product_id}}">
+				{{#each products}}
+					<option value="{{_id}}">{{name}}</option>
+				{{/each}}
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Cantidad</label>
+			<input type="text" class="form-control" placeholder="Cantidad del pedido" name="amount" value="{{order.amount}}">
+		</div>
+		<div class="form-group">
+			<label>Detalles</label>
+			<textarea class="form-control" name="details" placeholder="Ingresar detalles de pedido especial">{{order.details}}</textarea>
+		</div>
+		<input type="submit" class="btn btn-primary pull-right" value="Save">
+		<a href="/orders" class="btn btn-default pull-right">Back</a>
+		<a class="btn btn-danger" id="order-delete" data-order-id="{{order._id}}" data-csrf=locals._csrf>Delete</a>
+	</form>
+</div>

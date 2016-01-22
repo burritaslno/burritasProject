@@ -1,0 +1,12 @@
+<div class="header">
+	<h1 align="center">{{title}}</h1>
+</div>
+<div class="container">
+	<a href="/products/add" class="btn btn-primary pull-right">Create Product</a>
+	<br>
+	<ul class="list-group" style="margin-top:20px;">
+		{{#each products}}
+			<li class="list-group-item well"><a href="/products/{{_id}}"><center>{{name}}</center></a></li>	
+		{{/each}}
+	</ul>
+</div>

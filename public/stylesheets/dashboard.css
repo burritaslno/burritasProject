@@ -1,0 +1,11 @@
+.header{
+	background-color: #90C3D4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom:20px;
+}
+.form-container{
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,18 @@
+<div class="header">
+	<h1 align="center">Create New Product</h1>
+</div>
+<div class="container">
+	<form class="form-container" method="post" action="/products/add">
+		<div class="form-group">
+			<label>Nombre</label>
+			<input type="text" class="form-control" name="name" placeholder="Nombre">
+			<label>Precio</label>
+			<input type="text" class="form-control" name="price" placeholder="Precio">
+			<label>Detalles</label>
+			<textarea class="form-control" name="details" placeholder="Detalles"></textarea>
+			<br>
+			<input type="submit" class="btn btn-primary pull-right" value="Save">
+			<a href="/products" class="btn btn-default">Back</a>
+		</div>
+	</form>
+</div>

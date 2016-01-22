@@ -1,0 +1,11 @@
+<div class="header">
+	<h1 align="center">{{title}}</h1>
+</div>
+<div class="container">
+	<a href="/orders/add" class="btn btn-primary pull-right">Nueva Orden</a>
+	<ul class="list-group" style="margin-top:40px;">
+		{{#each orders}}
+			<li class="list-group-item well" align="center"><a href="/orders/{{_id}}">{{user}}</a></li>
+		{{/each}}
+	</ul>
+</div>
